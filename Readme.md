@@ -71,6 +71,8 @@ npx playwright codegen
 Esto abrirá un navegador donde puedes realizar acciones manuales y generara el codigo correspondiente.
 
 ## **Test reports**
+El generador de informes HTML muestra un informe completo de las pruebas.
+
 ```bash
 npx playwright show-report
 ```
@@ -80,6 +82,7 @@ npx playwright show-report
 
 ## **Estructura del Proyecto**
 La estructura recomendada para el proyecto es la siguiente:
+```
 /project-root
 │
 ├── /tests
@@ -92,7 +95,7 @@ La estructura recomendada para el proyecto es la siguiente:
 ├── package.json
 ├── .env
 └── README.md
-
+```
 /tests: Archivos de pruebas.
 /utils: Utilidades y comandos personalizados.
 playwright.config.ts: Configuración de Playwright.
