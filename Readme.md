@@ -16,7 +16,7 @@
 ## Prerequisitos
 Antes de comenzar, asegúrate de tener instalado lo siguiente en tu sistema:
 - [Node.js](https://nodejs.org/) (versión 14 o superior)
-- [npm](https://www.npmjs.com/) o [Yarn](https://yarnpkg.com/)
+- [npm](https://www.npmjs.com/)
 
 ## Instalación
 Sigue estos pasos para configurar el proyecto en tu máquina local:
@@ -25,7 +25,8 @@ Sigue estos pasos para configurar el proyecto en tu máquina local:
 git clone https://github.com/tu-usuario/tu-repositorio.git 
 cd tu-repositorio 
 ```
-2. **Instala las Dependencias**Utiliza npm para instalar las dependencias del proyecto.
+2. **Instala las Dependencias**
+Utiliza npm para instalar las dependencias del proyecto.
 ```bash
     npm install
 ```
@@ -35,6 +36,7 @@ Playwright requiere la descarga de navegadores específicos para ejecutar las pr
 npx playwright install
 ```
 ## ConfiguraciónConfigura las variables de entorno necesarias para ejecutar las pruebas correctamente.
+
 1. **Crea un Archivo .env** 
 En la raíz del proyecto, crea un archivo llamado .env y añade las variables:
 ```bash
@@ -56,7 +58,7 @@ npx playwright test
 ```
 2. **Ejecuta una Prueba Específica**
 ```bash
-npx playwright test tests/login.spec.js
+npx playwright test tests/example.spec.ts
 ```
 3. **Ejecutar en Modo de Depuración**
 Para depurar las pruebas y ver el navegador en acción:
@@ -76,9 +78,6 @@ El generador de informes HTML muestra un informe completo de las pruebas.
 ```bash
 npx playwright show-report
 ```
-
-
-
 
 ## **Estructura del Proyecto**
 La estructura recomendada para el proyecto es la siguiente:
